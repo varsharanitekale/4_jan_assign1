@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="formassin.css"/>
+</head>
+<body>
+    <div class="container">
+        <fieldset >
+            <legend> Registration Form</legend>
+            <div class="content">
+
+                        <form>
+                           
+             <input type="text" placeholder="First Name" required pattern="[A-Za-z]{2,}" maxlength="100" />
+             <input type="text" placeholder="Middle Name" required pattern="[A-Za-z]{2,}" maxlength="100"/>
+             <input type="text" placeholder="Last Name" pattern="[A-Za-z]{2,}" required maxlength="100"/>
+            
+             <div>
+             <input type="radio"   name="G" id="genderF" />  <label> Female</label>
+             <input type="radio" name="G" id="genderM" />  <label> Male</label>
+            </div>
+
+           
+             <input type="tel" placeholder="Mobile" required  pattern="[0-9]{10}"maxlength="10"/>
+             <input type="email" placeholder="Gmail"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required maxlength="130"/>
+             <input type="password" placeholder="password" pattern="[A-Za-z0-9@&*]{8}" required maxlength="8"/>
+             <input type="password" placeholder="conform password"  pattern="[A-Za-z0-9@&*]{8}" required maxlength="8"/>
+             <textarea  cols="25" rows="5" pattern="[A-Za-z0-9]{100}" placeholder="Address">
+
+             </textarea>
+             <div>
+             <input type="checkbox"/>
+             <label >read & accept the privacy</label>
+            </div>
+
+
+   <div class="btn">  <input type="submit" value="submit"/>
+             <input type="reset" value="reset"/>
+            </div>
+
+            </form>
+        </div>
+
+            
+        </fieldset>
+
+    </div>
+    
+</body>
+</html>
